@@ -1,5 +1,7 @@
 {
-    "directory_name": "Hello",
-    "file_name": "Howdy",
-    "greeting_recipient": "Jupiter"
+    "project_name": "Our Amazing Project Name",
+    "greeting_recipient": "Jupiter",
+    "team": "Jupiter Team",
+    "directory_name": "{{ cookiecutter.project_name|lower|replace(' ', '_')}}",
+    "file_name": "{{ cookiecutter.directory_name }}_file"
 }
